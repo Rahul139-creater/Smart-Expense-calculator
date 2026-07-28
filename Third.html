@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Calculator</title>
+    <link rel="stylesheet" href="Third.css">
+</head>
+<body>
+    <div class="container">
+        <div class="m1">
+            <H1 style="text-align: center;">Smart Expense Calculator</H1>
+            <hr>
+            <!-- Income -->
+            <h3 class="s1">Monthly Income :</h3>
+            <input type="number" placeholder="Amount" class="s2">
+            <hr>
+
+            <!-- Expense -->
+             <h3 class="s3">Your Expense :</h3>
+             <input type="text" placeholder="Expense Name" class="s4">
+             <input type="number" placeholder="Expense Amount" class="s5">
+             <button class="s6">ADD</button>
+            <hr>
+
+            <!-- Button -->
+            <button id="s7">Get Enquiry</button>
+
+            <!-- Hidden Table -->
+<table id="expenseTable" border="1" style="display:none; margin:auto; margin-top:200px;">
+    <thead>
+        <tr>
+            <th>Expense Name</th>
+            <th>Amount</th>
+        </tr>
+    </thead>
+
+    <tbody id="tableBody">
+
+    </tbody>
+</table>
+
+<!-- Result -->
+<div id="result" style="display:none; text-align:center; margin-top:20px;">
+    <h3 id="totalExpense"></h3>
+    <h3 id="saving"></h3>
+    <h3 id="savingPercent"></h3>
+</div>
+
+
+        </div>
+
+     
+    </div>
+    <script src="Thrid.js"></script>
+</body>
+</html>
